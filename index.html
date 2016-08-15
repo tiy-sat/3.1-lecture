@@ -4,9 +4,25 @@
     <meta charset="utf-8">
     <title>Using AJAX</title>
     <script src="javascripts/main.js" charset="utf-8"></script>
+    <script src="javascripts/weather.js" charset="utf-8"></script>
     <link rel="stylesheet" href="stylesheets/main.css">
   </head>
   <body>
+    <section>
+      <h2>Weather</h2>
+      <h3>The current temp in <span class="currentCity"></span> is... <span class="currentTemp"></span></h3>
+    </section>
+    <section>
+      <h2>Search for movies and see their posters!</h2>
+      <form action="index.html" method="post">
+        <input class="search__title" type="text" name="movieTitle">
+        <input class="search__submit" type="submit" name="submit" value="search now">
+      </form>
+
+      <ul class="movies">
+        <!-- Rendering with AJAX/JS all the items of movies -->
+      </ul>
+    </section>
 
   </body>
 </html>
